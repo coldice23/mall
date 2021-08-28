@@ -3,7 +3,7 @@ spring:
     name: gulimall-coupon
 
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: hanbing0223
     url: jdbc:mysql://localhost:3306/gulimall_sms?serverTimezone=Asia/Shanghai

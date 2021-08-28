@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ice.gulimall</groupId>
-    <artifactId>gulimall-order</artifactId>
+    <artifactId>gulimall-gateway</artifactId>
     <version>1.0</version>
-    <name>gulimall-order</name>
-    <description>订单服务</description>
+    <name>gulimall-gateway</name>
+    <description>Api网关</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -23,12 +23,8 @@
             <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
         <dependency>
@@ -80,7 +76,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.ice.gulimall.order.GulimallOrderApplication</mainClass>
+                    <mainClass>com.ice.gulimall.gateway.GulimallGatewayApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
